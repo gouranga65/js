@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo_js</title>
+    <style>
+        button{
+            height: 30px;
+            width: 270px;
+            background-color: yellow;
+            border-radius: 9px;
+        }
+    </style>
+</head>
+<body>
+    <h2>demo_js</h2>
+    <button>my roll no is 065 gouranga</button>
+    <script>
+       let sundar= document.querySelector('button');
+        sundar.addEventListener('click',inputmsg);
+
+        function inputmsg(){
+            // alert('gouranga_pop_up');
+            // above function will pop_up a messege shows when click on button 
+            let name = prompt('enter name of student');
+            sundar.textContent='roll no is  065!'+ name;
+        }
+    </script>
+</body>
+</html>
