@@ -1,0 +1,63 @@
+<!-- event2 on js with "code with harry" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events2</title>
+    <style>
+        #btn{
+            padding: 20px;
+            border-radius: 5px;
+            background-color: olive;
+            border: 2px solid;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- browser events:
+    1 click
+    2 contextmenu : when we right-click our mouse
+    3 mouseover
+    4 mouseout
+    5 mousedown
+    6 mouseup
+    7 mousemove
+    
+    8 submit
+    9 focous
+ 
+    10 dom content loded
+
+    11 transition : it is for css-->
+    <div class="container">
+        <h2>
+            this is my heading
+        </h2>
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi nam beatae consequuntur ut nulla eveniet?</p>
+        <button id="btn" onclick="toggleHide()">show/hide</button>
+    </div>
+    <script>
+        function toggleHide(){
+            let btn=document.getElementById('btn');
+            let para=document.getElementById('para');
+            // para.addEventListener('mouseover',function run(){
+            //     alert('mouse inside');
+            // }); 
+            // above not working
+            para.addEventListener('mouseout',function run(){
+                console.log("mouse outside");
+            });
+            if (para.style.display!='none') {
+             para.style.display='none';
+            }
+            else{
+                para.style.display='block';
+            }
+        }
+    </script>
+</body>
+</html>
