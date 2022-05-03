@@ -11,3 +11,7 @@ else if(age>=13 && age<=19){
 else{
     console.log('you are not a teenager');
 }
+
+//conditional operator
+let Name=19;
+console.log((Name>18)?"you can vote":"you cant vote");
