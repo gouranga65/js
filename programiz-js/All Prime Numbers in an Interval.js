@@ -1,19 +1,14 @@
-const lowerNumber =parseInt(prompt("enter the lower number="));
-const higherNumber =parseInt(prompt("emnter the hihgher number="));
+// prime  number in a range
 
-console.log(`prime number between ${lowerNumber} to ${higherNumber} are ---`);
+let num1=10;
+let num2=20;
 
-for(let i = lowerNumber; i<= higherNumber; i++){
-let flag = 0;
-
-for (let j =2 ; j<i;j++){
-    if(i%j==0){
-        flag=1;
-        break;
+for ( let i =num1;i<=num2;i++){
+    for (var j=2;j<=i;j++){
+        if (i%j==0) {
+            break;
+        }
+    }if (i==j) {
+        console.log(j);
     }
-}
-if(i>1 && flag == 0){
-    console.log(i);
-}
-
 }
