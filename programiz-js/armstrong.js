@@ -1,8 +1,16 @@
-let num=153;
-let Sum=0;
-let Temp=num;
-let noOfdigit=num.toString().length;
+let input=9474;
+let temp=0;
+let value=input;
+let noOfdigit=input.toString().length;
 console.log(noOfdigit);
-const armsTrong=(Value)=>{
-    
-};
+for(let i=1;i<=noOfdigit;i++){
+    let rem=input%10;
+    temp+=rem**noOfdigit;
+    input=parseInt(input/10);
+}
+if (temp==value) {
+    console.log("armstrong");
+}
+else{
+    console.log("not");
+}
