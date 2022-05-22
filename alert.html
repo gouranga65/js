@@ -1,23 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h3 id="demo">
-        hola
-    </h3>
-    <button type="submit" onclick="myName()">submit</button>
+    <style>
+      #demo {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="demo">Result will display here.</h3>
+    <button type="submit" onclick="add()">calculate</button>
     <script>
-        // window.alert(5+6);
-        // you can skip the "window." part
-        // document.getElementById("demo").innerHTML="gouranga"
-        function myName(){
-            document.getElementById("demo").innerText="gouranga";
-        }
+      function add() {
+        const nums = prompt("Enter nums with operation to perform ::: ");
+        let sum = 0;
+        nums.split("+").forEach(val => sum+= Number( val));
+         console.log(sum);
+         document.getElementById('demo').innerText = sum;
+         
+      }
+
+      // you can skip the "window." part
+      // document.getElementById("demo").innerHTML="gouranga"
+      //   function myName() {
+      //     const name = prompt("Enter your name:");
+
+      //     document.getElementById("demo").innerText = name;
+      //   }
+
+      //   //   function makeRed() {
+      //   //     const currentColor = document.getElementById("demo").style.color;
+      //   //     const name = document.getElementById("demo").innerText;
+
+      //   //     if (currentColor !== "red" && name.toLowerCase() !== "hola") {
+      //   //       document.getElementById("demo").style.color = "red";
+      //   //     } else {
+      //   //       document.getElementById("demo").style.color = "black";
+      //   //     }
+      //   //   }
+      //   var count = 3;
+      //   function makeCapital() {
+      //     const name = document.getElementById("demo").innerText;
+      //     count--;
+      //     if (count === 3) {
+      //       document.getElementById("demo").innerText = name.toLowerCase();
+      //     } else if (count === 2) {
+      //       document.getElementById("demo").innerText = name.toUpperCase();
+      //     } else if (count === 1) {
+      //       let newName = "";
+      //       name
+      //         .split(" ")
+      //         .forEach(
+      //           (val) =>
+      //             (newName +=
+      //               val.charAt(0).toUpperCase() +
+      //               val.slice(1).toLowerCase() +
+      //               " ")
+      //         );
+      //       document.getElementById("demo").innerText = newName;
+      //     }
+      //     if (count === 1) {
+      //       count = 4;
+      //     }
+      //   }
     </script>
-</body>
+  </body>
 </html>
+
+<!-- capitalize - 1, 4, 7, 10      -->
+<!-- uppercase -  2, 5, 8, 11     -->
+<!-- lowercase -  3, 6, 9, 12      -->
