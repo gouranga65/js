@@ -1,7 +1,9 @@
-let Num=0
-function Add(x) {
-    for (let i=0;i<=x;i++){
-        Num+=i;
-    } console.log(Num);
+
+function value(NUmber){
+  let Sum=0;
+  for(let i=1;i<=NUmber;i++){
+    return Sum+=NUmber;
   }
-Add();
+}
+value(5);
+console.log(Sum);
