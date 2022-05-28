@@ -8,13 +8,12 @@
 // Add(6);
 
 // with recursion
-function Add(num){
-    if (num>0) {
-        return num+ Add(num-1);
-    } else {
-        return num;
-    }
-};
-let val=Add(5);
+function Add(num) {
+  if (num > 0) {
+    return num + Add(num - 1);
+  } else {
+    return num;
+  }
+}
+let val = Add(5);
 console.log(val);
-
