@@ -1,14 +1,13 @@
-let value=121,reverse=0,rem,carry,add,resreve=value;
-while ((value!=0)) {
+let value=123;
+let reverse=value;
+let rem, carry,add,temp=0;
+while (value!=0) {
     rem=value%10;
-    value=parseInt(value/10);
-    add=reverse*10+rem;
-    // console.log(add);
-    if (add=reverse) {
-        console.log("paloindrom");
-        break;
-    } else {
-        console.log("not");
-        break;
-    }
+    value=parseInt(value/10)
+    temp=temp*10+rem;  
+}
+if (temp==reverse) {
+    console.log("palindrom");
+} else {
+    console.log("not");
 }
