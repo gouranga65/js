@@ -1,3 +1,4 @@
-let name="gouranga";
-let print=name?name:"user";
+let name="";
+// let print=name?name:"user";
+let print=(name||"user");
 console.log(print);
