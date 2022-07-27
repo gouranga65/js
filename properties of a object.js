@@ -4,3 +4,7 @@ let obj={
     phNo:9800771765,
     add:"prl"
 };
+for (const key in obj) {
+   console.log(key);
+        
+    }
