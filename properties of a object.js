@@ -4,4 +4,3 @@ let obj={
     phNo:9800771765,
     add:"prl"
 };
-// console.log(obj.keys[obj]);
