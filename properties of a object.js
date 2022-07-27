@@ -6,5 +6,7 @@ let obj={
 };
 for (const key in obj) {
    console.log(key);
+//    if we use obj.key it will give error because we add value in it
+   console.log(`${key}:${obj[key]}`);
         
     }
