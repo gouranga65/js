@@ -1,14 +1,11 @@
-let Data = [6, 4, 0, 3, -2, 1];
-for (let i = 0; i < Data.length; i++) {
-  if (Data[i] < Data[i + 1]) {
-    let c = Data[i + 1];
-    Data[i + 1] = Data[i];
-    Data[i] = c;
+let data = [2, 3, 1, 0, -6, 65];
+for (let i = 0; i < data.length; i++) {
+  for (let j = 0; j < data.length - i - 1; j++) {
+    if (data[j] > data[j + 1]) {
+      var arr = data[j];
+      data[j] = data[j + 1];
+      data[j + 1] = arr;
+    }
   }
-  console.log(Data[i]);
 }
-// let a=5,b=6,c;
-// c=b;
-// b=a;
-// a=c;
-// console.log(`a is ${a} and b is ${b}`);
+console.log(data);
